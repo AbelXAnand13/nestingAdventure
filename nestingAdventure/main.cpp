@@ -17,11 +17,26 @@ void escape() {
     bool quit = false;
     cout << "You and your master decide to escape, you cut a hole in the back of the net and escape through there." << sleep(3) << "You have to leave the camp and luckily, you see two vehicles, a Ship(1) and a Speeder bike(2)" << sleep(3) << "Which one do you take\n";
     cin >> choice1;
+    while (!quit) {
+       cin >> choice1;
+   switch (choice1) {
+       case 1:
+           quit = true;
+           break;
+       case 2:
+           quit = true;
+           break;
+       default:
+           cout << "Make a valid decision!\n";
+           break;
+           }
+       }
 }
 void avenge() {
     int choice1;
     bool quit = false;
     cout << "\nNO MASTER!" <<"An instant reflex kicks in, you slice the clones and go over to your master." << sleep(3) << "Go, your master says. Be safe, May the force be wi- ";
+    cout << sleep(3) << "You could've prevented it" << sleep(2) << "eat grabage";
 }
 void stick() {
     int choice1;
@@ -96,6 +111,7 @@ int main() {
         }
     }
 //   sleep(3);  to sleep
+
 /* for choice
  
  while (!quit) {
