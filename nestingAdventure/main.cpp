@@ -1,11 +1,14 @@
 #include <iostream>
 #include <string>
 #include <stdio.h>
-#include <chrono>
 #include <thread>
 #include <unistd.h>
-#include <time.h>
 using namespace std;
+
+void death() {
+    cout << "\nWASTED";
+    cout << "\nYou Died";
+}
 
 void attack() {
     int choice1;
@@ -16,9 +19,14 @@ void attack() {
        cin >> choice1;
    switch (choice1) {
        case 1:
+           cout << "You run outside with your Lightsaber to kill the clones, you are greeted by a barrage of blaster fire. \nWithin a few moments, you are overwhelmed, your saber drops as feel the immense pain of the blasts.";
+           death();
            quit = true;
            break;
        case 2:
+           quit = true;
+           break;
+       case 3:
            quit = true;
            break;
        default:
@@ -73,6 +81,10 @@ void avenge() {
 void stick() {
     int choice1;
     bool quit = false;
+    cout << "Master, why!, you've always said the republic is good, now you can't turn away from that because of a change in the name." << sleep(3) << "\nGet him help, you say to the clones. You leave and go to the cruiser you were meant to leave the planet on." << sleep(3);
+    cout << "\nThere you see a group of clones huddled aroung a hologram of Admiral Tarkin, as you approach then, they raise their blasters at you."<< sleep(3) << "Admiral Tarkin addresses you, I've heard from the clone that you decided to join the Empire" << sleep(3) << "Yes";
+    cout << "The Empire does not want Jedi, we need Inquisitors(1) or Spies(2)." << sleep (2) << "Which one would you like to be?";
+    cin >> choice1;
     
     while (!quit) {
        cin >> choice1;
@@ -181,4 +193,14 @@ switch (choice1) {
         break;
         }
     }
+ 
+ 
+ 
+ chart:
+ 
+                         Empire                                         Die
+                 Stick             Avenge                 Escape                  Attack
+       Inquisitor - Spy        Rage -  Contain       Speeder - Ship       Kill - Sabotage - Hide
+ 
+ Results in 9 different endings
  */
