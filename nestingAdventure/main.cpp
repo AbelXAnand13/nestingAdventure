@@ -19,20 +19,24 @@ void attack() {
        cin >> choice1;
    switch (choice1) {
        case 1:
-           cout << "You run outside with your Lightsaber to kill the clones, you are greeted by a barrage of blaster fire. \nWithin a few moments, you are overwhelmed, your saber drops as feel the immense pain of the blasts.";
+           cout << "You run outside with your Lightsaber to kill the clones, you are greeted by a barrage of blaster fire. \nWithin a few moments, you are overwhelmed, your saber drops as you feel the immense pain of the blasts.";
            death();
            quit = true;
            break;
        case 2:
+           cout << "You and your master hide near the opening of the tent, when the clones come inside, you easily sill them." << sleep(3) << "\nYou go outside and pick off each clone one by one, then you go to the main cruiser, mostly empty, you and your master take control of it without much effort.";
+           cout << sleep(4) << "\nYou disable the tracker, you are a ghost from now on, you can trust no one but your master.\nYour story doesn't end here though, you have your whole life to live...";
            quit = true;
            break;
        case 3:
+           cout << "You and your master hide, the clones come into your tent, but using your mind-tricks, they don't see you";
            quit = true;
            break;
        default:
            cout << "Make a valid decision!\n";
            break;
-           }
+           
+            }
        }
 }
 
