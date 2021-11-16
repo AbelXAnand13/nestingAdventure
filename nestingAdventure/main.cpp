@@ -1,3 +1,6 @@
+//Nesting Adventure
+//Abel Anand
+
 #include <iostream>
 #include <string>
 #include <stdio.h>
@@ -29,7 +32,7 @@ void attack() {
            quit = true;
            break;
        case 3:
-           cout << "You and your master hide, the clones come into your tent, but using your mind-tricks, they don't see you";
+           cout << "You and your master hide, the clones come into your tent, but using your mind-tricks, they don't see you, after a thorough investigation, they leave\nYou leave the tent and run away from the main city.\nYou have one objective now, never be found\n...";
            quit = true;
            break;
        default:
@@ -71,9 +74,12 @@ void avenge() {
        cin >> choice1;
    switch (choice1) {
        case 1:
+           cout << "You exit your tent to see a few clones with their blaster pointed towards you, with the force, you push them to the ground.\n*tsh*";
+           death();
            quit = true;
            break;
        case 2:
+           cout << "What would your master have wanted you to do\nYou calm down at that thoi";
            quit = true;
            break;
        default:
