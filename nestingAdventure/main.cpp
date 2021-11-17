@@ -52,9 +52,12 @@ void escape() {
        cin >> choice1;
    switch (choice1) {
        case 1:
+           cout << "You decide to to use the ship to escaoe, after all, it has turrents.\nYou don't get too far off the ait before you remember the anti-aircraft cannon positioned near the main cruiser\n*shhhsh  shhhsh*";
+           death();
            quit = true;
            break;
        case 2:
+           cout << "You decide to take the more discreet vehicle\nThe clones don't hear or see you\nYou have to get out of the city somehow...";
            quit = true;
            break;
        default:
@@ -79,7 +82,8 @@ void avenge() {
            quit = true;
            break;
        case 2:
-           cout << "What would your master have wanted you to do\nYou calm down at that thoi";
+           cout << "What would your master have wanted you to do\nYou calm down at that thooght. You exit the tent with your lightsaber up, a few clones shoot at you, you deflect the shots and hit them.";
+           cout << "\nYou need to escape the planet with your ship, but there is is anti-aircraft cannon, you go and disable it.\nWith nothing stopping your departure, you leave.\nYou need to find out what is going on...";
            quit = true;
            break;
        default:
@@ -92,21 +96,25 @@ void stick() {
     int choice1;
     bool quit = false;
     cout << "Master, why!, you've always said the republic is good, now you can't turn away from that because of a change in the name." << sleep(3) << "\nGet him help, you say to the clones. You leave and go to the cruiser you were meant to leave the planet on." << sleep(3);
-    cout << "\nThere you see a group of clones huddled aroung a hologram of Admiral Tarkin, as you approach then, they raise their blasters at you."<< sleep(3) << "Admiral Tarkin addresses you, I've heard from the clone that you decided to join the Empire" << sleep(3) << "Yes";
-    cout << "The Empire does not want Jedi, we need Inquisitors(1) or Spies(2)." << sleep (2) << "Which one would you like to be?";
+    cout << "\nThere you see a group of clones huddled aroung a hologram of Admiral Tarkin, as you approach them, they raise their blasters at you."<< sleep(3) << "\nAdmiral Tarkin addresses you, I've heard from the clone that you decided to join the Empire" << sleep(3) << "\nYes";
+    cout << "The Empire does not want Jedi, we need Inquisitors(1) or Spies(2)." << sleep (2) << "\nWhich one would you like to be?\n";
     cin >> choice1;
     
     while (!quit) {
        cin >> choice1;
    switch (choice1) {
        case 1:
+           cout << "\nI'll be an Inquisitor, whatever it is." << sleep(3);
+           cout << "\n5 YEARS LATER\n";
+           cout << "\nThe Jedi are dead, join us or die...";
            quit = true;
            break;
        case 2:
+           cout << "\nWho am I spying on?";
            quit = true;
            break;
        default:
-           cout << "Make a valid decision!\n";
+           cout << "\nMake a valid decision!\n";
            break;
            }
        }
